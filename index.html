@@ -12,14 +12,68 @@
     <!-- tailwind with daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/10522c3609.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- css styles -->
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
     </style>
 </head>
 
 <body class="font-manrope">
+
+    <!-- header section start -->
+    <header class="container mx-auto">
+
+        <!-- hero section start -->
+        <div class="hero mt-20">
+            <div class="hero-content flex-col lg:flex-row ">
+
+                <div class="">
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 lg:w-4/6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary bg-gradient-to-r from-[#F00] to-[#FF8938] ... font-bold border-none">Explore More <i class="fa-solid fa-arrow-up transform rotate-45 "></i></button>
+                </div>
+                <div class="">
+                    <img class="max-w-sm" src="images/banner.png" />
+                    <!-- ratings badge -->
+                    <div class="flex items-center gap-4 drop-shadow-lg bg-white w-60 p-4 -mt-16 rounded-lg">
+                        <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+                        <div class="">
+                            <h3 class="text-3xl">5.00</h3>
+                            <p class="">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section start -->
+    <main class="container mx-auto">
+
+    </main>
+
+    <!-- footer section start -->
+    <footer>
+
+    </footer>
 
 </body>
 
